@@ -1,0 +1,26 @@
+name: Build and Run Docker Image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker Image
+        run: docker build -t my-image:v1 .
+
+      - name: Run container
+        run: docker run -d -p 80:80 --name reactapp my-image:v1
+
+      - name: Test app
+        run: curl -I http://localhost
+
+      - name: Show running containers
+        run: docker ps
