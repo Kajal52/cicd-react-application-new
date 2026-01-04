@@ -41,12 +41,12 @@ export default class CustomerDetails extends Component {
         </Panel.Heading>
         <Panel.Body>
           <p>Full Name : {this.state.customerDetails.data.name}</p>
-          <p>Email ID : {this.state.customerDetails.data.email}</p>
-          <p>Phone NO : {this.state.customerDetails.data.phone}</p>
-          <p>City like dom: {this.state.customerDetails.data.city}</p>
+          <p>Email : {this.state.customerDetails.data.email}</p>
+          <p>Phone No : {this.state.customerDetails.data.phone}</p>
+          <p>City : {this.state.customerDetails.data.city}</p>
           <p>State : {this.state.customerDetails.data.state}</p>
           <p>Country : {this.state.customerDetails.data.country}</p>
-          <p>Organization : {this.state.customerDetails.data.organization}</p>
+          <p>Organization Details : {this.state.customerDetails.data.organization}</p>
           <p>Job Profile : {this.state.customerDetails.data.jobProfile}</p>
           <p>Additional Info : {this.state.customerDetails.data.additionalInfo}</p>
         </Panel.Body>
