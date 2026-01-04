@@ -18,7 +18,7 @@ jobs:
           docker stop reactapp || true
           docker rm reactapp || true
 
-      - name: Remove old image (optional)
+      - name: Remove old image
         run: docker rmi my-image:v1 || true
 
       - name: Build Docker Image
