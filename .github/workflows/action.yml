@@ -27,5 +27,5 @@ jobs:
       - name: Run Container
         run: docker run -d -p 80:80 --name reactapp my-image:v1
 
-      - name: Show Running Containers
+      - name: Show Running Containers status
         run: docker ps
